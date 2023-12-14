@@ -1,0 +1,47 @@
+# UI
+"ui.background" = {fg = "pink", bg = "purple"}
+"ui.cursor.primary" = {fg = "purple", bg = "white"}
+"ui.cursor.match" = {fg = "purple", bg = "white"}
+"ui.linenr" = "pink"
+"ui.linenr.selected" = "white"
+"ui.statusline" = {fg = "purple", bg = "pink"}
+"ui.popup" = {fg = "purple", bg = "pink"}
+"ui.help" = {fg = "purple", bg = "pink"}
+"ui.text" = "white"
+"ui.text.focus" = "pink"
+"ui.text.inactive" = "pink"
+"ui.text.info" = "purple" #Test this and change it... maybe purple?
+"ui.virtual" = {fg = "pink"}
+"ui.virtual.ruler" = {bg = "purple_dark"}
+"ui.menu" = {fg = "purple", bg = "pink"}
+"ui.menu.selected" = {fg = "white", bg = "purple"}
+"ui.selection" = {fg = "purple", bg = "pink"}
+"ui.selection.primary" = {fg = "purple", bg = "white"}
+"ui.highlight" = {bg = "pink"}
+"info" = {modifiers = ["bold"]}
+# TODO: Handle debug, gutter, diagnostics
+
+# which witch is which witch
+
+# Syntax
+"type" = "purple_light"
+"comment" = {fg = "grey", modifiers = ["italic"]}
+"function" = "purple_light"
+"keyword" = "yellow"
+"operator" = "yellow"
+"string" = "blue"
+"constant.numeric" = "green"
+"constant.character" = "blue"
+# TODO: Setup markup colors
+
+[palette]
+# TODO: Names need to make sense...
+purple_light = "#af86af"
+purple = "#3a2a3a"
+purple_dark = "#290029"
+white = "#e0dadc"
+pink = "#917980"
+grey = "#978997"
+yellow = "#ffcda4"
+green = "#a8ffa4"
+blue = "#a4ffff"
