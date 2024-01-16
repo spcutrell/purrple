@@ -1,7 +1,8 @@
 # UI
 "ui.background" = {fg = "pink", bg = "purple"}
-"ui.cursor.primary" = {fg = "purple", bg = "white"}
 "ui.cursor.match" = {fg = "purple", bg = "white"}
+"ui.cursor.primary" = {fg = "purple", bg = "grey"}
+"ui.cursor.primary.select" = {fg = "purple", bg = "pink"}
 "ui.linenr" = "pink"
 "ui.linenr.selected" = "white"
 "ui.statusline" = {fg = "purple", bg = "pink"}
@@ -12,16 +13,14 @@
 "ui.text.inactive" = "pink"
 "ui.text.info" = "purple" #Test this and change it... maybe purple?
 "ui.virtual" = {fg = "pink"}
-"ui.virtual.ruler" = {bg = "purple_dark"}
+"ui.virtual.ruler" = {bg = "grey"}
 "ui.menu" = {fg = "purple", bg = "pink"}
 "ui.menu.selected" = {fg = "white", bg = "purple"}
-"ui.selection" = {fg = "purple", bg = "pink"}
+"ui.selection" = {fg = "purple", bg = "white"}
 "ui.selection.primary" = {fg = "purple", bg = "white"}
 "ui.highlight" = {bg = "pink"}
 "info" = {modifiers = ["bold"]}
 # TODO: Handle debug, gutter, diagnostics
-
-# which witch is which witch
 
 # Syntax
 "type" = "purple_light"
@@ -32,14 +31,20 @@
 "string" = "blue"
 "constant.numeric" = "green"
 "constant.character" = "blue"
+
+# TODO: Come up with better colors
+"diff.plus" =  "green"
+"diff.minus" = "red"
+"diff.delta" = "yellow"
 # TODO: Setup markup colors
+"markup.link.url" = "blue"
+"markup.link.text" = "yellow"
+"markup.heading" = "grey"
 
 [palette]
-# TODO: Names need to make sense...
 purple_light = "#af86af"
 purple = "#3a2a3a"
-purple_dark = "#290029"
-white = "#e0dadc"
+offwhite = "#e0dadc"
 pink = "#917980"
 grey = "#978997"
 yellow = "#ffcda4"
