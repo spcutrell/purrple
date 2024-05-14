@@ -1,52 +1,79 @@
 # UI
-"ui.background" = {fg = "pink", bg = "purple"}
-"ui.cursor.match" = {fg = "purple", bg = "white"}
-"ui.cursor.primary" = {fg = "purple", bg = "grey"}
-"ui.cursor.primary.select" = {fg = "purple", bg = "pink"}
-"ui.linenr" = "pink"
-"ui.linenr.selected" = "white"
-"ui.statusline" = {fg = "purple", bg = "pink"}
-"ui.popup" = {fg = "purple", bg = "pink"}
-"ui.help" = {fg = "purple", bg = "pink"}
-"ui.text" = "white"
-"ui.text.focus" = "pink"
-"ui.text.inactive" = "pink"
-"ui.text.info" = "purple" #Test this and change it... maybe purple?
-"ui.virtual" = {fg = "pink"}
-"ui.virtual.ruler" = {bg = "grey"}
-"ui.menu" = {fg = "purple", bg = "pink"}
-"ui.menu.selected" = {fg = "white", bg = "purple"}
-"ui.selection" = {fg = "purple", bg = "white"}
-"ui.selection.primary" = {fg = "purple", bg = "white"}
-"ui.highlight" = {bg = "pink"}
-"info" = {modifiers = ["bold"]}
-# TODO: Handle debug, gutter, diagnostics
+"ui.background" = {bg = "purple_dark"}
+"ui.background.separator" = {fg = "offwhite"}
 
-# Syntax
-"type" = "purple_light"
-"comment" = {fg = "grey", modifiers = ["italic"]}
-"function" = "purple_light"
-"keyword" = "yellow"
-"operator" = "yellow"
-"string" = "blue"
-"constant.numeric" = "green"
-"constant.character" = "blue"
+"ui.cursor" = {modifiers = ["reversed", "dim"]}
+"ui.cursor.primary" = {modifiers = ["reversed"]}
+"ui.cursor.match" = {modifiers = ["dim"]}
 
-# TODO: Come up with better colors
-"diff.plus" =  "green"
+# ui.debug.breakpoint
+# ui.debug.active
+# ui.highlight.frameline
+
+"ui.selection" = {bg = "grey_dark", modifiers = ["dim"]}
+"ui.selection.primary" = { bg = "grey_dark"}
+
+"ui.linenr" = {fg = "offwhite", modifiers = ["dim"]}
+"ui.linenr.selected" = {fg = "offwhite"}
+
+"ui.statusline" = {fg = "purple_dark", bg = "offwhite"}
+"ui.statusline.inactive" = {fg = "purple_light", bg = "offwhite"}
+
+"ui.window" = "purple_light"
+
+"ui.text" = "offwhite"
+"ui.text.info" = "purple_dark"
+
+"ui.help" = {fg = "offwhite_dark", bg = "purple"}
+
+"ui.bufferline" = {bg = "purple"}
+"ui.bufferline.active" = {fg = "purple", bg = "offwhite_dark"}
+
+"ui.virtual.ruler" = {bg = "purple"}
+
+"ui.menu" = {fg = "purple", bg = "offwhite_dark"}
+
+"ui.popup" = {fg = "purple", bg = "offwhite"}
+
+# "error" = "red"
+# "diagnostic" = {fg = "red", modifiers = ["dim"]}
+# "warning" = "yellow
+# "diagnostic.warning" = {fg = "yellow", modifiers = ["dim"]}
+
+
+# SYNTAX
+"constant" = "blue_light"
+# "string.regexp" = "red"
+# "string.special" = {fg = "cyan", modifiers = ["italic"]}
+"type" = {modifiers = ["dim"]}
+"comment" = {fg = "grey_light", modifiers = ["italic", "dim"]}
+"keyword" = "blue_light"
+"function" = "green_light"
+# "tag" = "cyan"
+
+"diff.plus" = "green"
 "diff.minus" = "red"
 "diff.delta" = "yellow"
-# TODO: Setup markup colors
-"markup.link.url" = "blue"
-"markup.link.text" = "yellow"
-"markup.heading" = "grey"
+
+# markup
+# markup.url.link
 
 [palette]
-purple_light = "#af86af"
-purple = "#3a2a3a"
-offwhite = "#e0dadc"
-pink = "#917980"
-grey = "#978997"
-yellow = "#ffcda4"
-green = "#a8ffa4"
-blue = "#a4ffff"
+grey_light = "#e3e6e3"
+grey_dark = "#847584"
+
+purple = "#4d3f4d"
+purple_light = "#887f88"
+purple_dark = "#3a2a3a"
+
+offwhite = "#eee1b5"
+offwhite_dark = "#b3a988"
+
+red = "#f05d5e"
+yellow = "#f5bb00"
+yellow_light = "#ffe17f"
+green = "#749c75"
+green_light = "#adc5ae"
+
+blue = "#4f7c8e"
+blue_light = "#9ebcc9"
